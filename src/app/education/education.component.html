@@ -1,0 +1,37 @@
+   <!--education start -->
+<section id="education" class="education">
+  <div class="section-heading text-center">
+      <h2>education</h2>
+  </div>
+  <div class="container">
+      <div class="education-horizontal-timeline">
+          <div class="row">
+              <div *ngFor="let edu of educacion.item"class="col-sm-4">
+                  <div class="single-horizontal-timeline">
+                      <div class="experience-time">
+                          <h2>{{edu.anio}}</h2>
+                          <h3>{{edu.titulo1}}</h3>
+                      </div><!--/.experience-time-->
+                      <div class="timeline-horizontal-border">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                          <span class="single-timeline-horizontal"></span>
+                      </div>
+                      <div class="timeline">
+                          <div class="timeline-content">
+                              <h4 class="title">
+                                  {{edu.lugarEst}}
+                              </h4>
+                              <h5>{{edu.ciudad}}</h5>
+                              <p class="description">
+                                  {{edu.descripcion}}
+                              </p>
+                          </div><!--/.timeline-content-->
+                      </div><!--/.timeline-->
+                  </div>
+              </div>                
+          </div>
+      </div>
+  </div>
+
+</section><!--/.education-->
+<!--education end -->
