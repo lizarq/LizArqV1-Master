@@ -1,0 +1,14 @@
+:host{
+    position: fixed;
+    right: 10px;
+    top:100px;
+
+}
+
+.cerrar{
+    cursor: hand;
+    display:block;
+    position:absolute;
+    top:-10px;
+    right:-10px;
+}
