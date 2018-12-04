@@ -21,6 +21,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavbarrouterlinkComponent } from './navbarrouterlink/navbarrouterlink.component';
+import { HomeComponent } from './home/home.component';
+import { ModalComponent } from './_directives';
+import { ModalService } from './_services';
+import { PopupComponent } from './popup/popup.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +46,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProfilesComponent,
     ExperienceComponent,
     FormValidationComponent,
+    NavbarrouterlinkComponent,
+    HomeComponent,
+    ModalComponent,
+    PopupComponent,
+  
   
   ],
   imports: [
@@ -49,7 +61,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ModalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

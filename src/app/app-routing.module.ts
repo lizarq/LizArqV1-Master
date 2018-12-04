@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -15,25 +15,38 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { NavbarrouterlinkComponent } from './navbarrouterlink/navbarrouterlink.component';
+import { HomeComponent } from './home/home.component';
+import { PopupComponent } from './popup/popup.component';
 const routes: Routes = [
-  {path:'Portoflio', 
+  {path: 'Home', component:HomeComponent},
+  {path:'', redirectTo:'/Home',pathMatch: 'full' },
+  {path:'Portfolio', 
    component: PortfolioComponent,
-   children: [{
-    path: 'Renders',
-    component: RendersComponent
-  }, {
+   children:[
+     {path:'popup',
+     component:PopupComponent,
+     outlet:'liz'
+   }
+   ]
+  
+  },
+
+  {
+    path: 'Documentacion',
+    component: DocumentacionComponent
+
+  },
+  {
     path: 'Reformas',
     component: ReformasComponent
   },
   {
-    path: 'Documentacion',
-    component: DocumentacionComponent
-  }
+    path: 'Renders',
+    component: RendersComponent
+  }, 
+  {path:'NavBarRl', component: NavbarrouterlinkComponent},
 
-  ]
-   
-  
-  },
   { path:'Cv', component:CvComponent },
   { path:'Welcome', component:WelcomeComponent },
   { path:'Education', component:EducationComponent },

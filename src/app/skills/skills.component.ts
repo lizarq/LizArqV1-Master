@@ -9,7 +9,57 @@ import * as $ from 'jquery';
 export class SkillsComponent implements OnInit {
 
   constructor() { }
+	Skills = {
+   
+    item:[
+      {
+        porcentaje:"90%",
+        title:"adobe photoshop"         
+      } , 
+      {
+       porcentaje:"85%",
+       title:"adobe illustrator"         
+      } , 
+   
+      {
+       porcentaje:"97%",
+       title:"Autocad"         
+      } , 
+        {
+        porcentaje:"90%",
+        title:"Revit"         
+      }  ,
+      {
+        porcentaje:"90%",
+        title:"3dmax"         
+      }          
+   ],
+   item2:
+    [
+      {
+        porcentaje:"90%",
+        title:"html 5"         
+      } , 
+      {
+       porcentaje:"85%",
+       title:"css 3"         
+      } , 
+      {
+       porcentaje:"97%",
+       title:"communication"         
+      } , 
+      {
+       porcentaje:"90%",
+       title:"creativity"         
+      } , 
+      {
+        porcentaje:"90%",
+        title:"Vray"         
+      }      
+    ]
 
+   
+};
   ngOnInit() {
     var dataToggleTooTip = (<any>$)("[data-toggle='tooltip']");
 		var progressBar = (<any>$)('.progress-bar');
