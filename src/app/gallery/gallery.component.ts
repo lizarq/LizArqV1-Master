@@ -2,17 +2,20 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import {DEMO_GALLERY_CONF_INLINE, DEMO_GALLERY_IMAGE, DEMO_GALLERY_IMAGE1} from "../config";
 import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
+
+
 @Component({
-  selector: 'app-popup',
-  templateUrl: './popup.component.html',
-  styleUrls: ['./popup.component.css']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css']
 })
-export class PopupComponent implements OnInit {
+export class GalleryComponent implements OnInit {
+
+  constructor(private router:Router) { }
+
   ngOnInit() {
   }
-  constructor(private router:Router) { }
   public showConf: boolean = true;
-  
   @ViewChild('ngxImageGallery') ngxImageGallery: NgxImageGalleryComponent;
 
   title = 'Demo App';
@@ -21,7 +24,7 @@ export class PopupComponent implements OnInit {
   conf: GALLERY_CONF = DEMO_GALLERY_CONF_INLINE;
 
   // gallery images
-  images: GALLERY_IMAGE[] = DEMO_GALLERY_IMAGE1;
+  images: GALLERY_IMAGE[] = DEMO_GALLERY_IMAGE;
 
   // METHODS
   // open gallery
@@ -80,7 +83,8 @@ export class PopupComponent implements OnInit {
   deleteImage(index) {
     console.info('Delete image at index ', index);
   }
-  cancelForm(){
+
+   cancelForm(){
    
     this.router.navigate(['../Portfolio'])
   }

@@ -18,14 +18,17 @@ import { ExperienceComponent } from './experience/experience.component';
 import { NavbarrouterlinkComponent } from './navbarrouterlink/navbarrouterlink.component';
 import { HomeComponent } from './home/home.component';
 import { PopupComponent } from './popup/popup.component';
+import {GalleryComponent} from './gallery/gallery.component';
+
 const routes: Routes = [
+ 
   {path: 'Home', component:HomeComponent},
   {path:'', redirectTo:'/Home',pathMatch: 'full' },
   {path:'Portfolio', 
    component: PortfolioComponent,
    children:[
-     {path:'popup',
-     component:PopupComponent,
+     {path:'Gallery',
+     component:GalleryComponent,
      outlet:'liz'
    }
    ]

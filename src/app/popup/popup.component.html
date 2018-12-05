@@ -1,4 +1,12 @@
 <p>
-  <a (click)="cancel()" class="cerrar">close</a>
-  <img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
-</p>
+    gallery works!
+  </p>
+  <ngx-image-gallery 
+  [images]="images" 
+  [conf]="conf"
+  (onOpen)="galleryOpened($event)"
+  (onClose)="galleryClosed()"
+  (onImageClicked)="galleryImageClicked($event)"
+  (onImageChange)="galleryImageChanged($event)"
+  (onDelete)="deleteImage($event)"
+  ></ngx-image-gallery>
