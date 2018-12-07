@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
       imgalt:'portfolio image',
       ref:'#',
       title:'Renders' ,
-      route:'Renders'        
+      route:'Gallery'   
       } , 
       {
       imgsrc:'assets/images/portfolio/p2.jpg',

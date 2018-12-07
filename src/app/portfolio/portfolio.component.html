@@ -13,7 +13,7 @@
               <div *ngFor="let liz of Portfolio.item" class="item">
                 <img src="{{liz.imgsrc}}" alt="portfolio image"/>
                 <div class="isotope-overlay">
-                  <a routerLink="../{{liz.route}}" >
+                  <a routerLink="['../Portfolio',{outlets:{liz:'{{liz.route}}'}]" >
                     {{liz.title}}
                   </a>
                 </div><!-- /.isotope-overlay -->
@@ -25,7 +25,7 @@
                   
                   <img src="{{liz2.imgsrc}}" alt="portfolio image"/>
                   <div class="isotope-overlay">
-                    <a routerLink="../{{liz2.route}}">
+                    <a routerLink="['../Portfolio',{outlets:{liz:'Gallery'}}]">
                       {{liz2.title}}
                     </a>
                   </div><!-- /.isotope-overlay -->
