@@ -21,67 +21,7 @@ font-family: 'Poppins', sans-serif;
 /*-------------------------------------
 		1.General css (Reset code)
 --------------------------------------*/
-jw-modal {
-    /* modals are hidden by default */
-    display: none;
-}
-.jw-modal-background {
-    /* modal background fixed across whole screen */
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 
-    /* semi-transparent black  */
-    background-color:transparent;
-    opacity: 0.75;
-    
-    /* z-index must be below .jw-modal and above everything else  */
-    z-index: 900;
-}
-
-body.jw-modal-open {
-    /* body overflow is hidden to hide main scrollbar when modal window is open */
-    
-    position: fixed;
-    top: 10px;
-    bottom: 5px;
-}
-
-img{
-    width: 75%;
-    height: 75%;
-}
-.jw-modal {
-    /* modal container fixed across whole screen */
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: transparent;
-    /* z-index must be higher than .jw-modal-background */
-    z-index: 1000;
-    
-    /* enables scrolling for tall modals */
-    overflow: auto;
-}
-jw-modal.jw-modal-background {
-    /* modal background fixed across whole screen */
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    /* semi-transparent black  */
-    background-color:transparent;
-    opacity: 0.75;
-    
-    /* z-index must be below .jw-modal and above everything else  */
-    z-index: 900;
-}
 :host{
     position: fixed;
     top: 10px;
@@ -339,7 +279,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     content: " ";
     top: 0;
     left:  0;
-    width: 100%;
+    width: 109%;
     height:  100%;
     background: rgba(31,44,108,.3);
 }
@@ -385,7 +325,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.ab-list-icon */
 
 /*.single-about-img */
-
 /*-------------------------------------
         5.  Education
 --------------------------------------*/
