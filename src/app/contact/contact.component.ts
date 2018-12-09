@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators } from '@angular/forms';
-
-
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +8,7 @@ import { Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   constructor() { }
-  model:any={}
+  
   datosContacto = {
     Marca: "LizArq",
     Profesion: "Arquitecta",
