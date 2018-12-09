@@ -17,37 +17,49 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { NavbarrouterlinkComponent } from './navbarrouterlink/navbarrouterlink.component';
 import { HomeComponent } from './home/home.component';
-import { PopupComponent } from './popup/popup.component';
-import {GalleryComponent} from './gallery/gallery.component';
+
+
+import { BuildingsComponent } from './buildings/buildings.component';
 
 const routes: Routes = [
  
-  {path: 'Home', component:HomeComponent},
+  {path: 'Home', component:HomeComponent,
+  children:[
+    {
+      path: 'Renders',
+      component: RendersComponent,
+      outlet: 'liz'
+    },
+  
+  {
+    path: 'Autocad',
+    component: DocumentacionComponent,
+    outlet: 'liz'
+  },
+   
+  {
+    path: 'Reformas',
+    component: ReformasComponent,
+    outlet: 'liz'
+  },
+    {
+      path: 'Revit',
+      component: DocumentacionComponent,
+      outlet: 'liz'
+    }
+  ]
+},
   {path:'', redirectTo:'/Home',pathMatch: 'full' },
   {path:'Portfolio', 
    component: PortfolioComponent,
    children:[
-     {path:'Gallery',
-     component:GalleryComponent,
-     outlet:'liz'
-   }
+    
    ]
   
   },
 
-  {
-    path: 'Documentacion',
-    component: DocumentacionComponent
 
-  },
-  {
-    path: 'Reformas',
-    component: ReformasComponent
-  },
-  {
-    path: 'Renders',
-    component: RendersComponent
-  }, 
+
   {path:'NavBarRl', component: NavbarrouterlinkComponent},
 
   { path:'Cv', component:CvComponent },

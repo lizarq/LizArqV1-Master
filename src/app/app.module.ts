@@ -25,11 +25,10 @@ import { NavbarrouterlinkComponent } from './navbarrouterlink/navbarrouterlink.c
 import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './_directives';
 import { ModalService } from './_services';
-import { PopupComponent } from './popup/popup.component';
+
 import { NgxImageGalleryModule } from 'ngx-image-gallery';
-import {GalleryComponent} from './gallery/gallery.component';
 
-
+import { BuildingsComponent } from './buildings/buildings.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,8 +50,8 @@ import {GalleryComponent} from './gallery/gallery.component';
     NavbarrouterlinkComponent,
     HomeComponent,
     ModalComponent,
-    PopupComponent,
-    GalleryComponent
+    
+    BuildingsComponent
   
     
     

@@ -18,14 +18,14 @@ export class PortfolioComponent implements OnInit {
       imgalt:'portfolio image',
       ref:'#',
       title:'Renders' ,
-      route:'Gallery'   
+      route:'Renders'   
       } , 
       {
-      imgsrc:'assets/images/portfolio/p2.jpg',
+      imgsrc:'assets/images/portfolio/Autocad.jpg',
       imgalt:"portfolio image",
       ref:"#",
-      title:"Drawings and documentation",
-      route:'Documentacion'
+      title:"Autocad",
+      route:'Autocad'
       } , 
      ],
      item2:
@@ -38,11 +38,11 @@ export class PortfolioComponent implements OnInit {
         route:'Reformas'
        } , 
        {
-        imgsrc:"assets/images/portfolio/p5.jpg",
+        imgsrc:"assets/images/portfolio/Revit.jpg",
         imgalt:"portfolio image",
         ref:"#",
-        title:"buildings",
-        route:'Buildings'
+        title:"Revit",
+        route:'Revit'
 
        }    
       ]
