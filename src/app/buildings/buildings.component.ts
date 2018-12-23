@@ -1,6 +1,6 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import {DEMO_GALLERY_CONF_INLINE, DEMO_GALLERY_RENDERS} from "../config";
+import {DEMO_GALLERY_CONF_INLINE, DEMO_GALLERY_RENDERS, DEMO_GALLERY_AUTOCAD} from "../config";
 import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
 
 @Component({
@@ -22,7 +22,7 @@ export class BuildingsComponent implements OnInit {
   conf: GALLERY_CONF = DEMO_GALLERY_CONF_INLINE;
 
   // gallery images
-  images: GALLERY_IMAGE[] = DEMO_GALLERY_RENDERS;
+  images: GALLERY_IMAGE[] = DEMO_GALLERY_AUTOCAD;
 
   // METHODS
   // open gallery

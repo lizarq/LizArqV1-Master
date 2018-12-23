@@ -32,16 +32,16 @@ export const DEMO_GALLERY_CONF: GALLERY_CONF = {
 
 export const DEMO_GALLERY_REFORMAS: GALLERY_IMAGE[] = [
     {
-      url: "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg",
+      url: "assets/images/Reformas/ReformaJuanita.jpg",
       altText: 'woman-in-black-blazer-holding-blue-cup',
       title: 'woman-in-black-blazer-holding-blue-cup',
-      thumbnailUrl: "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg"
+      thumbnailUrl: "assets/images/Reformas/ReformaJuanita.jpg"
     },
     {
-      url: "https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg",
+      url: "assets/images/Reformas/ReformaJuanita2.jpg",
       altText: 'two-woman-standing-on-the-ground-and-staring-at-the-mountain',
       extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
-      thumbnailUrl: "https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg"
+      thumbnailUrl: "assets/images/Reformas/ReformaJuanita2.jpg"
     },
   ];
   
@@ -75,31 +75,56 @@ export const DEMO_GALLERY_REFORMAS: GALLERY_IMAGE[] = [
   
   export const DEMO_GALLERY_AUTOCAD: GALLERY_IMAGE[] = [
     {
-      url: "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg",
-      altText: 'woman-in-black-blazer-holding-blue-cup',
-      title: 'woman-in-black-blazer-holding-blue-cup',
-      thumbnailUrl: "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg"
+      url: "assets/images/Documentos/Vista.png",
+      altText: 'proyecto parque patricios',
+      title: 'proyecto parque patricios',
+      thumbnailUrl:"assets/images/autocad/Vista.png"
     },
     {
-      url: "https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg",
-      altText: 'two-woman-standing-on-the-ground-and-staring-at-the-mountain',
+      url: "assets/images/Documentos/Pb.png",
+      altText: 'proyecto parque patricios',
       extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
-      thumbnailUrl: "https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg"
+      thumbnailUrl: "assets/images/autocad/Pb.png"
     },
   ];
   
   export const DEMO_GALLERY_REVIT: GALLERY_IMAGE[] = [
     {
-      url: "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg",
-      altText: 'woman-in-black-blazer-holding-blue-cup',
-      title: 'woman-in-black-blazer-holding-blue-cup',
-      thumbnailUrl: "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_lizards.jpg"
+      url: "assets/images/Revit/ParquePatricios2.png",
+      altText: 'proyecto parque patricios',
+      title: 'proyecto parque patricios',
+      thumbnailUrl: "assets/images/Revit/ParquePatricios2.png"
     },
     {
-      url: "https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg",
-      altText: 'two-woman-standing-on-the-ground-and-staring-at-the-mountain',
+      url: "assets/images/Revit/ParquePatricios3.png",
+      altText: 'proyecto parque patricios',
       extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
-      thumbnailUrl: "https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg"
+      thumbnailUrl: "assets/images/Revit/ParquePatricios3.png"
     },
+    {
+      url: "assets/images/Revit/ParquePatriciso.png",
+      altText: 'proyecto parque patricios',
+      extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
+      thumbnailUrl: "assets/images/Revit/ParquePatriciso.png"
+    },
+    {
+      url: "assets/images/Revit/Revit4.png",
+      altText: 'proyecto parque patricios',
+      extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
+      thumbnailUrl: "assets/images/Revit/Revit4.png"
+    },
+    {
+      url: "assets/images/Revit/Revit1.png",
+      altText: 'proyecto parque patricios',
+      extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
+      thumbnailUrl: "assets/images/Revit/Revit1.png"
+    },
+    {
+      url: "assets/images/Revit/fitzroy1.png",
+      altText: 'proyecto oficinas',
+      extUrl: 'https://animals.sandiegozoo.org/sites/default/files/inline-images/animals-lizard-redheadedagamapair.jpg',
+      thumbnailUrl: "assets/images/Revit/fitzroy1.png"
+    },
+
   ];
 

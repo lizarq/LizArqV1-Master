@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import swal from 'sweetalert';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -18,5 +18,16 @@ export class ContactComponent implements OnInit {
   }
   ngOnInit() {
   }
-
+  log(x){
+    console.log(x);
+  }
+  click(){
+    swal("Gracias por contactarse con nosotros", "En instantes enviaremos un mensaje respondiendo su consulta", 'success');
+  }
+  contactForm(Formulario) {
+    
+    swal("Formulario de contacto", "Mensaje enviado correctamente", 'success');
+   
+    
+   }
 }

@@ -33,7 +33,7 @@ const routes: Routes = [
   
   {
     path: 'Autocad',
-    component: DocumentacionComponent,
+    component: BuildingsComponent,
     outlet: 'liz'
   },
    

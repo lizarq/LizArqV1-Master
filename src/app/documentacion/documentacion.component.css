@@ -3,9 +3,13 @@
     right: 10%;
     left: 10%;
     top:20%;
-   
+    
     background-color:rgba(0, 0, 0, 0.50);
     
      
 
+}
+:host .img{
+   position: center;
+   margin-top: 50px; 
 }

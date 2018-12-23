@@ -1,6 +1,6 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import {DEMO_GALLERY_CONF_INLINE, DEMO_GALLERY_AUTOCAD} from "../config";
+import {DEMO_GALLERY_CONF_INLINE, DEMO_GALLERY_REVIT} from "../config";
 import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "ngx-image-gallery";
 @Component({
   selector: 'app-documentacion',
@@ -22,7 +22,7 @@ export class DocumentacionComponent implements OnInit {
   conf: GALLERY_CONF = DEMO_GALLERY_CONF_INLINE;
 
   // gallery images
-  images: GALLERY_IMAGE[] = DEMO_GALLERY_AUTOCAD;
+  images: GALLERY_IMAGE[] = DEMO_GALLERY_REVIT;
 
   // METHODS
   // open gallery
