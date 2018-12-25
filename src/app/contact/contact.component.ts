@@ -14,8 +14,12 @@ export class ContactComponent implements OnInit {
     Profesion: "Arquitecta",
     Tel: "1538542914",
     Mail: "lizarq@gmail.com",
-    site: "lizarq@gmail.com" 
+    site: "lizarq@gmail.com",
+    Linkedinurl:"https://www.linkedin.com/in/yaninaglaser",
+    Instagramurl:"https://www.instagram.com/lizarchitecture",
+    Behanceurl:"https://www.behance.net/glaseryanina"
   }
+
   ngOnInit() {
   }
   log(x){
